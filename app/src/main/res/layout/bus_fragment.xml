@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RadioGroup
+        android:id="@+id/rd_busFragment_radioGroup"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_marginRight="16dp"
+            android:id="@+id/rd_busFragment_two"
+            android:text="دو طرفه"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:checked="true"
+            android:layout_marginLeft="16dp"
+            android:id="@+id/rd_busFragment_one"
+            android:text="یک طرفه"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RadioGroup>
+
+    <TextView
+        android:background="@android:color/transparent"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:drawableRight="@drawable/ic_baseline_airplanemode_gray_active_24"
+        android:gravity="center"
+        android:hint="شهر مبدا"
+        android:id="@+id/edt_busFragment_source"
+        android:layout_below="@id/rd_busFragment_radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <View
+        android:layout_marginRight="24dp"
+        android:layout_marginLeft="24dp"
+        android:background="@color/color_gray200"
+        android:layout_below="@id/edt_busFragment_source"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <TextView
+        android:background="@android:color/transparent"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:drawableRight="@drawable/ic_baseline_airplanemode_gray_active_24"
+        android:gravity="center"
+        android:hint="شهر مقصد"
+        android:id="@+id/edt_busFragment_destination"
+        android:layout_below="@id/edt_busFragment_source"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <View
+        android:layout_marginRight="24dp"
+        android:layout_marginLeft="24dp"
+        android:background="@color/color_gray200"
+        android:layout_below="@id/edt_busFragment_destination"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <TextView
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:drawableRight="@drawable/ic_baseline_date_gray_range_24"
+        android:hint="تاریخ رفت"
+        android:layout_below="@id/edt_busFragment_destination"
+        android:id="@+id/edt_busFragment_date"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <View
+        android:layout_marginRight="24dp"
+        android:layout_marginLeft="24dp"
+        android:background="@color/color_gray200"
+        android:layout_below="@id/edt_busFragment_date"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <Button
+        android:id="@+id/btn_busFragment_search"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:text="جستجو"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_search_style"
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

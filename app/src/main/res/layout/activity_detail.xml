@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_gray200"
+    tools:context=".DetailActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:background="@color/colorPrimary"
+        android:elevation="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/img_detail_back"
+            android:layout_margin="8dp"
+            android:layout_alignParentRight="true"
+            app:srcCompat="@drawable/ic_baseline_arrow_white_forward_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginRight="32dp"
+            android:layout_toLeftOf="@id/img_detail_back"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:text="اصفهان"
+            android:id="@+id/txt_detail_origin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:id="@+id/img_detail_icon"
+            android:layout_toLeftOf="@+id/txt_detail_origin"
+            app:srcCompat="@drawable/ic_baseline_airplanemode_white_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_toLeftOf="@id/img_detail_icon"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:text="تهران"
+            android:id="@+id/txt_detail_destination"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="8dp"
+            tools:text="13 فروردین 1399"
+            android:layout_marginRight="32dp"
+            android:layout_toLeftOf="@id/img_detail_back"
+            android:layout_below="@id/img_detail_icon"
+            android:id="@+id/txt_detail_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_detail_tickets"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

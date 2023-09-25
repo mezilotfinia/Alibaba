@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/rel_busItem_parent"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginTop="8dp"
+            android:padding="4dp"
+            android:textColor="@color/white"
+            android:background="@drawable/txt_type_style"
+            tools:text="ماهان VIP"
+            android:id="@+id/txt_busItem_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_margin="8dp"
+            android:id="@+id/txt_busItem_origin"
+            android:layout_alignParentRight="true"
+            tools:text="همسفر جابکسواران پایانه بیهقی"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_margin="8dp"
+            android:layout_below="@id/txt_busItem_origin"
+            android:layout_alignParentRight="true"
+            tools:text="تهران پایانه بیهقی"
+            android:id="@+id/txt_busItem_originTerminal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            tools:text="اصفهان پایانه کاوه"
+            android:id="@+id/txt_busItem_destinationTerminal"
+            android:layout_below="@id/txt_busItem_type"
+            android:layout_margin="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <View
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/txt_busItem_originTerminal"
+            android:id="@+id/busItem_line"
+            android:background="@color/color_gray600"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <TextView
+            android:layout_margin="8dp"
+            android:layout_below="@id/busItem_line"
+            android:layout_alignParentRight="true"
+            tools:text="ظرفیت موجود 26 نفر"
+            android:id="@+id/txt_busItem_capacity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_margin="8dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            tools:text="400,000 ریال"
+            android:layout_below="@id/busItem_line"
+            android:id="@+id/txt_busItem_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
