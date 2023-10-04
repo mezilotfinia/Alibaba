@@ -4,5 +4,5 @@
 - 📫 **mezi.lotfinia@gmail.com**
 - ✅ **Java - Api - Php **
 
-![Picture_one](https://ns20.ir/alibaba/alibaba1.jpg)
+![Picture_one](https://ns20.ir/alibaba/alibaba1.jpg){:width="100px" height="300px"}
 
